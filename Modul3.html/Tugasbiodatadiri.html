@@ -1,157 +1,20 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="photo-card">
+    <img src="foto-wisnu.png" alt="Foto Wisnu">
+</div><main class="hero">
 
-    <title>Profil Wisnu</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #eef2f7;
-        }
-
-        header {
-            background: #123f2a;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-
-        .profil {
-            width: 90%;
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-
-            display: flex;
-            gap: 40px;
-            align-items: center;
-        }
-
-        /* FOTO */
-        .foto {
-            width: 300px;
-            height: 400px;
-            flex-shrink: 0;
-        }
-
-        .foto img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 20px;
-        }
-
-        .biodata h2 {
-            color: #123f2a;
-        }
-
-        .biodata p {
-            font-size: 17px;
-            margin: 12px 0;
-        }
-
-        .biodata b {
-            color: #e85d04;
-        }
-
-        footer {
-            background: #123f2a;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 50px;
-        }
-
-        @media (max-width: 700px) {
-            .profil {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .foto {
-                width: 280px;
-                height: 370px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <h1>PROFIL MAHASISWA</h1>
-        <p>Universitas Muhammadiyah PKU Surakarta</p>
-    </header>
-
-
-    <div class="profil">
-
-        <!-- FOTO KAMU -->
-        <div class="foto">
-            <img src="foto-wisnu.jpg"
-                 alt="Foto Wisnu Sanjaya Putra Perdana">
-        </div>
-
-
-        <!-- BIODATA -->
-        <div class="biodata">
-
-            <h2>
-                Wisnu Sanjaya Putra Perdana
-            </h2>
-
-            <p>
-                <b>NIM:</b>
-                1202405050
-            </p>
-
-            <p>
-                <b>Prodi:</b>
-                D4 Elektromedis
-            </p>
-
-            <p>
-                <b>Semester:</b>
-                5
-            </p>
-
-            <p>
-                <b>Hobi:</b>
-                Berenang
-            </p>
-
-            <p>
-                <b>Jenis Kelamin:</b>
-                Laki - Laki
-            </p>
-
-            <p>
-                <b>Organisasi:</b>
-                HIMATEM
-            </p>
-
-        </div>
-
+    <div class="photo-card">
+        <img src="foto-wisnu.png" alt="Foto Wisnu Sanjaya Putra Perdana">
     </div>
 
+    <section class="content">
+        <h1>
+            Wisnu Sanjaya<br>
+            <span>Putra Perdana</span>
+        </h1>
 
-    <footer>
         <p>
-            © 2026 Wisnu Sanjaya Putra Perdana
+            Mahasiswa D4 Elektromedis Semester 5
         </p>
+    </section>
 
-        <p>
-            D4 Elektromedis - Semester 5
-        </p>
-    </footer>
-
-</body>
-</html>
+</main>
