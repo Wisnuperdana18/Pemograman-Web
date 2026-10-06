@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil Wisnu Sanjaya Putra Perdana</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eef2f7;
+            color: #263238;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(10px);
+
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .nav-container {
+            width: 90%;
+            max-width: 1100px;
+
+            margin: auto;
+
+            min-height: 70px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: bold;
+
+            color: #123f2a;
+
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #e85d04;
+        }
+
+        .menu {
+            display: flex;
+            gap: 8px;
+        }
+
+        .menu a {
+            text-decoration: none;
+
+            color: #344054;
+
+            padding: 9px 15px;
+
+            border-radius: 25px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            background: #123f2a;
+            color: white;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 650px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0c3b2e,
+                    #146e41
+                );
+
+            position: relative;
+
+            overflow: hidden;
+
+            color: white;
+        }
+
+        .hero::before {
+            content: "";
+
+            position: absolute;
+
+            width: 450px;
+            height: 450px;
+
+            border-radius: 50%;
+
+            background: rgba(255,255,255,0.05);
+
+            top: -200px;
+            right: -100px;
+        }
+
+        .hero::after {
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            background: rgba(232,93,4,0.15);
+
+            bottom: -150px;
+            left: -100px;
+        }
+
+        .hero-container {
+            width: 90%;
+            max-width: 1100px;
+
+            margin: auto;
+
+            min-height: 650px;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text small {
+            display: inline-block;
+
+            padding: 7px 15px;
+
+            border-radius: 30px;
+
+            background: rgba(255,255,255,0.12);
+
+            border: 1px solid rgba(255,255,255,0.2);
+
+            color: #ffd166;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(40px, 5vw, 62px);
+
+            line-height: 1.05;
+
+            margin: 20px 0;
+        }
+
+        .hero-text h1 span {
+            color: #ff8c42;
+        }
+
+        .hero-text p {
+            color: #d9e5df;
+
+            font-size: 17px;
+
+            line-height: 1.8;
+
+            max-width: 550px;
+        }
+
+        .tombol {
+            display: flex;
+
+            gap: 12px;
+
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 13px 22px;
+
+            border-radius: 10px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #e85d04;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #c94d00;
+
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #123f2a;
+        }
+
+
+        /* =========================
+           FOTO PROFIL
+        ========================= */
+
+        .foto-box {
+            display: flex;
+
+            justify-content: center;
+
+            position: relative;
+        }
+
+        .foto-frame {
+            width: 360px;
+            height: 470px;
+
+            padding: 10px;
+
+            background: white;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 25px 60px rgba(0,0,0,0.30);
+
+            transform: rotate(2deg);
+
+            transition: 0.4s;
+
+            overflow: hidden;
+        }
+
+        .foto-frame:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        .foto-frame img {
+            width: 100%;
+            height: 100%;
+
+            display: block;
+
+            object-fit: cover;
+
+            object-position: center;
+
+            border-radius: 18px;
+        }
+
+
+        /* =========================
+           IDENTITAS
+        ========================= */
+
+        .section {
+            width: 90%;
+            max-width: 1100px;
+
+            margin: auto;
+
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+
+            margin-bottom: 40px;
+        }
+
+        .section-title small {
+            color: #e85d04;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+
+            color: #123f2a;
+
+            margin-top: 5px;
+        }
+
+        .section-title p {
+            color: #667085;
+
+            margin-top: 8px;
+        }
+
+        .identitas-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 18px;
+        }
+
+        .data {
+            background: white;
+
+            padding: 23px;
+
+            border-radius: 15px;
+
+            border: 1px solid #e2e8f0;
+
+            box-shadow:
+                0 8px 25px rgba(0,0,0,0.05);
+
+            transition: 0.3s;
+        }
+
+        .data:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 15px 30px rgba(0,0,0,0.10);
+        }
+
+        .data-label {
+            display: block;
+
+            color: #e85d04;
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 5px;
+        }
+
+        .data-value {
+            color: #123f2a;
+
+            font-size: 17px;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           HOBI & ORGANISASI
+        ========================= */
+
+        .keunggulan {
+            background: #123f2a;
+
+            color: white;
+
+            width: 100%;
+
+            max-width: none;
+        }
+
+        .keunggulan-container {
+            width: 90%;
+            max-width: 1100px;
+
+            margin: auto;
+        }
+
+        .keunggulan .section-title h2 {
+            color: white;
+        }
+
+        .keunggulan .section-title p {
+            color: #cbd5e1;
+        }
+
+        .kartu-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 25px;
+        }
+
+        .kartu {
+            background: white;
+
+            color: #263238;
+
+            padding: 35px;
+
+            border-radius: 20px;
+
+            transition: 0.3s;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        .kartu::before {
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            top: 0;
+
+            width: 100%;
+            height: 5px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #e85d04,
+                    #f9c74f
+                );
+        }
+
+        .kartu:hover {
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .icon {
+            font-size: 40px;
+
+            margin-bottom: 15px;
+        }
+
+        .kartu h3 {
+            color: #123f2a;
+
+            margin-bottom: 10px;
+        }
+
+        .kartu p {
+            color: #667085;
+        }
+
+
+        /* =========================
+           QUOTE
+        ========================= */
+
+        .quote {
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fff7ed,
+                    #ffffff
+                );
+
+            padding: 70px 20px;
+        }
+
+        .quote h2 {
+            max-width: 750px;
+
+            margin: auto;
+
+            color: #123f2a;
+
+            font-size: 30px;
+
+            line-height: 1.4;
+        }
+
+        .quote p {
+            margin-top: 15px;
+
+            color: #e85d04;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #09271a;
+
+            color: white;
+
+            padding: 35px 5%;
+        }
+
+        .footer-container {
+            width: 90%;
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        footer p {
+            color: #aebdb5;
+
+            font-size: 13px;
+
+            margin-top: 5px;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 800px) {
+
+            .nav-container {
+                flex-direction: column;
+
+                padding: 15px 0;
+
+                gap: 10px;
+            }
+
+            .menu {
+                flex-wrap: wrap;
+
+                justify-content: center;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+
+                padding: 60px 0;
+            }
+
+            .hero {
+                min-height: auto;
+            }
+
+            .hero-container {
+                min-height: auto;
+            }
+
+            .foto-box {
+                order: -1;
+            }
+
+            .foto-frame {
+                width: 300px;
+                height: 400px;
+            }
+
+            .identitas-grid,
+            .kartu-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                flex-direction: column;
+            }
+        }
+
+
+        @media (max-width: 500px) {
+
+            .hero-text h1 {
+                font-size: 40px;
+            }
+
+            .foto-frame {
+                width: 270px;
+                height: 360px;
+            }
+
+            .tombol {
+                flex-direction: column;
+            }
+
+            .btn {
+                text-align: center;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#beranda" class="logo">
+                WISNU<span>.</span>
+            </a>
+
+            <div class="menu">
+
+                <a href="#beranda">
+                    Beranda
+                </a>
+
+                <a href="#identitas">
+                    Identitas
+                </a>
+
+                <a href="#tentang">
+                    Tentang Saya
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <header class="hero" id="beranda">
+
+        <div class="hero-container">
+
+
+            <div class="hero-text">
+
+                <small>
+                    PROFIL MAHASISWA
+                </small>
+
+                <h1>
+                    Halo, Saya
+                    <span>Wisnu.</span>
+                </h1>
+
+                <p>
+
+                    Selamat datang di halaman profil pribadi saya.
+                    Saya merupakan mahasiswa Program Studi
+                    D4 Elektromedis yang sedang menempuh
+                    pendidikan di semester 5.
+
+                </p>
+
+
+                <div class="tombol">
+
+                    <a
+                        href="#identitas"
+                        class="btn btn-primary"
+                    >
+                        Lihat Identitas
+                    </a>
+
+                    <a
+                        href="#tentang"
+                        class="btn btn-outline"
+                    >
+                        Tentang Saya
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOTO YANG KAMU KIRIM -->
+
+            <div class="foto-box">
+
+                <div class="foto-frame">
+
+                    <img
+                        src="wisnu.jpg"
+                        alt="Foto Wisnu Sanjaya Putra Perdana"
+                    >
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         IDENTITAS
+    ========================= -->
+
+    <section
+        class="section"
+        id="identitas"
+    >
+
+        <div class="section-title">
+
+            <small>
+                DATA DIRI
+            </small>
+
+            <h2>
+                Identitas Saya
+            </h2>
+
+            <p>
+                Informasi singkat mengenai diri saya.
+            </p>
+
+        </div>
+
+
+
+        <div class="identitas-grid">
+
+
+            <div class="data">
+
+                <span class="data-label">
+                    NAMA LENGKAP
+                </span>
+
+                <span class="data-value">
+                    Wisnu Sanjaya Putra Perdana
+                </span>
+
+            </div>
+
+
+
+            <div class="data">
+
+                <span class="data-label">
+                    NIM
+                </span>
+
+                <span class="data-value">
+                    1202405050
+                </span>
+
+            </div>
+
+
+
+            <div class="data">
+
+                <span class="data-label">
+                    PROGRAM STUDI
+                </span>
+
+                <span class="data-value">
+                    D4 Elektromedis
+                </span>
+
+            </div>
+
+
+
+            <div class="data">
+
+                <span class="data-label">
+                    SEMESTER
+                </span>
+
+                <span class="data-value">
+                    Semester 5
+                </span>
+
+            </div>
+
+
+
+            <div class="data">
+
+                <span class="data-label">
+                    JENIS KELAMIN
+                </span>
+
+                <span class="data-value">
+                    Laki - Laki
+                </span>
+
+            </div>
+
+
+
+            <div class="data">
+
+                <span class="data-label">
+                    HOBI
+                </span>
+
+                <span class="data-value">
+                    Berenang
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         TENTANG SAYA
+    ========================= -->
+
+    <section
+        class="section keunggulan"
+        id="tentang"
+    >
+
+        <div class="keunggulan-container">
+
+            <div class="section-title">
+
+                <small>
+                    TENTANG SAYA
+                </small>
+
+                <h2>
+                    Hobi & Organisasi
+                </h2>
+
+                <p>
+                    Aktivitas yang saya ikuti di luar perkuliahan.
+                </p>
+
+            </div>
+
+
+            <div class="kartu-grid">
+
+
+                <!-- HOBI -->
+
+                <div class="kartu">
+
+                    <div class="icon">
+                        🏊
+                    </div>
+
+                    <h3>
+                        Berenang
+                    </h3>
+
+                    <p>
+
+                        Berenang merupakan salah satu hobi saya.
+                        Aktivitas ini menjadi salah satu cara
+                        untuk menjaga kebugaran sekaligus
+                        mengisi waktu luang.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- ORGANISASI -->
+
+                <div class="kartu">
+
+                    <div class="icon">
+                        🤝
+                    </div>
+
+                    <h3>
+                        HIMATEM
+                    </h3>
+
+                    <p>
+
+                        Saya mengikuti organisasi HIMATEM
+                        sebagai salah satu wadah untuk
+                        mengembangkan pengalaman, kerja sama,
+                        komunikasi, dan kemampuan berorganisasi.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         QUOTE
+    ========================= -->
+
+    <section class="quote">
+
+        <h2>
+            "Terus belajar, terus berkembang,
+            dan jangan takut mencoba hal baru."
+        </h2>
+
+        <p>
+            — Wisnu Sanjaya Putra Perdana
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div>
+
+                <strong>
+                    Wisnu Sanjaya Putra Perdana
+                </strong>
+
+                <p>
+                    D4 Elektromedis — Semester 5
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    © 2026 Wisnu Sanjaya Putra Perdana
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
