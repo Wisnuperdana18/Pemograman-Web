@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+📁 profil-wisnu
+│
+├── index.html
+└── foto-wisnu.jpg<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -8,16 +11,14 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>
-        Profil Wisnu Sanjaya Putra Perdana
-    </title>
+    <title>Profil Wisnu Sanjaya</title>
 
 
     <style>
 
-        /* ==================================================
+        /* ==============================
            RESET
-        ================================================== */
+        ============================== */
 
         * {
             margin: 0;
@@ -32,127 +33,69 @@
 
 
         body {
-
-            font-family:
-                Arial,
-                Helvetica,
-                sans-serif;
-
-            background: #f3f6f5;
-
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f1f5f9;
             color: #263238;
-
-            line-height: 1.6;
-
         }
 
 
-        /* ==================================================
+        /* ==============================
            NAVBAR
-        ================================================== */
+        ============================== */
 
-        .navbar {
+        nav {
+            width: 100%;
+
+            background: #123f2a;
+
+            padding: 18px 8%;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
 
             position: sticky;
 
             top: 0;
 
-            z-index: 1000;
-
-            background: rgba(
-                255,
-                255,
-                255,
-                0.96
-            );
-
-            backdrop-filter: blur(10px);
-
-            box-shadow:
-                0 3px 15px
-                rgba(0, 0, 0, 0.08);
-
+            z-index: 100;
         }
 
 
-        .nav-container {
-
-            width: 90%;
-
-            max-width: 1100px;
-
-            min-height: 70px;
-
-            margin: auto;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: space-between;
-
+        nav h2 {
+            color: white;
+            font-size: 24px;
         }
 
 
-        .logo {
-
-            color: #123f2a;
-
-            font-size: 23px;
-
-            font-weight: bold;
-
-            text-decoration: none;
-
+        nav h2 span {
+            color: #ff7b00;
         }
 
 
-        .logo span {
-
-            color: #f36c21;
-
-        }
-
-
-        .menu {
-
-            display: flex;
-
-            gap: 8px;
-
-        }
-
-
-        .menu a {
-
-            color: #263238;
-
-            text-decoration: none;
-
-            font-weight: bold;
-
-            padding:
-                9px 15px;
-
-            border-radius: 25px;
-
-            transition: 0.3s;
-
-        }
-
-
-        .menu a:hover {
-
+        nav a {
             color: white;
 
-            background: #123f2a;
+            text-decoration: none;
 
+            margin-left: 20px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
         }
 
 
-        /* ==================================================
+        nav a:hover {
+            color: #ff7b00;
+        }
+
+
+        /* ==============================
            HERO
-        ================================================== */
+        ============================== */
 
         .hero {
 
@@ -162,152 +105,52 @@
                 linear-gradient(
                     135deg,
                     #0b3828,
-                    #146e41
+                    #197149
                 );
 
             color: white;
 
-            position: relative;
-
-            overflow: hidden;
-
-        }
-
-
-        .hero::before {
-
-            content: "";
-
-            position: absolute;
-
-            width: 450px;
-
-            height: 450px;
-
-            border-radius: 50%;
-
-            background:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.05
-                );
-
-            top: -200px;
-
-            right: -100px;
-
-        }
-
-
-        .hero::after {
-
-            content: "";
-
-            position: absolute;
-
-            width: 300px;
-
-            height: 300px;
-
-            border-radius: 50%;
-
-            background:
-                rgba(
-                    243,
-                    108,
-                    33,
-                    0.18
-                );
-
-            bottom: -150px;
-
-            left: -100px;
+            padding: 70px 8%;
 
         }
 
 
         .hero-container {
 
-            width: 90%;
-
             max-width: 1100px;
-
-            min-height: 650px;
 
             margin: auto;
 
             display: grid;
 
             grid-template-columns:
-                1fr 1fr;
-
-            align-items: center;
+                1fr 400px;
 
             gap: 60px;
 
-            position: relative;
-
-            z-index: 2;
+            align-items: center;
 
         }
 
 
-        /* ==================================================
-           TEKS HERO
-        ================================================== */
-
         .hero-text small {
 
-            display: inline-block;
-
             color: #ffd166;
-
-            font-size: 12px;
 
             font-weight: bold;
 
             letter-spacing: 2px;
-
-            padding:
-                8px 15px;
-
-            border:
-                1px solid
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.25
-                );
-
-            border-radius: 30px;
-
-            background:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.08
-                );
 
         }
 
 
         .hero-text h1 {
 
-            font-size:
-                clamp(
-                    40px,
-                    5vw,
-                    62px
-                );
+            font-size: 58px;
 
-            line-height: 1.05;
+            line-height: 1.1;
 
-            margin:
-                20px 0;
+            margin: 20px 0;
 
         }
 
@@ -321,138 +164,41 @@
 
         .hero-text p {
 
-            max-width: 550px;
-
-            color: #dce9e2;
-
-            font-size: 17px;
+            font-size: 18px;
 
             line-height: 1.8;
 
-        }
-
-
-        .tombol {
-
-            display: flex;
-
-            gap: 12px;
-
-            margin-top: 30px;
+            color: #dce9e2;
 
         }
 
 
-        .btn {
-
-            display: inline-block;
-
-            padding:
-                13px 22px;
-
-            border-radius: 10px;
-
-            text-decoration: none;
-
-            font-weight: bold;
-
-            transition: 0.3s;
-
-        }
-
-
-        .btn-primary {
-
-            background: #f36c21;
-
-            color: white;
-
-        }
-
-
-        .btn-primary:hover {
-
-            background: #cf4f0d;
-
-            transform:
-                translateY(-3px);
-
-        }
-
-
-        .btn-outline {
-
-            border:
-                2px solid white;
-
-            color: white;
-
-        }
-
-
-        .btn-outline:hover {
-
-            background: white;
-
-            color: #123f2a;
-
-        }
-
-
-        /* ==================================================
+        /* ==============================
            FOTO
-        ================================================== */
+        ============================== */
 
-        .foto-area {
-
-            display: flex;
-
-            justify-content: center;
-
-            align-items: center;
-
-        }
-
-
-        .foto-box {
+        .foto {
 
             width: 360px;
 
             height: 480px;
 
-            padding: 9px;
+            margin: auto;
 
             background: white;
+
+            padding: 8px;
 
             border-radius: 25px;
 
             box-shadow:
-                0 25px 60px
-                rgba(
-                    0,
-                    0,
-                    0,
-                    0.30
-                );
-
-            transform:
-                rotate(2deg);
-
-            transition: 0.4s;
+                0 20px 50px
+                rgba(0, 0, 0, 0.35);
 
         }
 
 
-        .foto-box:hover {
-
-            transform:
-                rotate(0deg)
-                scale(1.02);
-
-        }
-
-
-        .foto-box img {
+        .foto img {
 
             width: 100%;
 
@@ -469,9 +215,45 @@
         }
 
 
-        /* ==================================================
+        /* ==============================
+           BUTTON
+        ============================== */
+
+        .tombol {
+
+            display: inline-block;
+
+            margin-top: 30px;
+
+            padding: 14px 25px;
+
+            background: #ff7b00;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 10px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+
+        }
+
+
+        .tombol:hover {
+
+            background: #d95e00;
+
+            transform: translateY(-3px);
+
+        }
+
+
+        /* ==============================
            SECTION
-        ================================================== */
+        ============================== */
 
         .section {
 
@@ -486,7 +268,7 @@
         }
 
 
-        .section-title {
+        .judul {
 
             text-align: center;
 
@@ -495,50 +277,34 @@
         }
 
 
-        .section-title small {
-
-            color: #f36c21;
-
-            font-weight: bold;
-
-            letter-spacing: 2px;
-
-        }
-
-
-        .section-title h2 {
+        .judul h2 {
 
             color: #123f2a;
 
             font-size: 38px;
 
-            margin-top: 5px;
+            margin-bottom: 8px;
 
         }
 
 
-        .section-title p {
+        .judul p {
 
             color: #6b7280;
 
-            margin-top: 8px;
-
         }
 
 
-        /* ==================================================
-           IDENTITAS
-        ================================================== */
+        /* ==============================
+           DATA IDENTITAS
+        ============================== */
 
-        .identitas-grid {
+        .data-container {
 
             display: grid;
 
             grid-template-columns:
-                repeat(
-                    2,
-                    1fr
-                );
+                repeat(2, 1fr);
 
             gap: 20px;
 
@@ -551,20 +317,14 @@
 
             padding: 25px;
 
-            border-radius: 16px;
+            border-radius: 15px;
 
             border-left:
-                5px solid
-                #f36c21;
+                5px solid #ff7b00;
 
             box-shadow:
                 0 8px 25px
-                rgba(
-                    0,
-                    0,
-                    0,
-                    0.06
-                );
+                rgba(0, 0, 0, 0.07);
 
             transition: 0.3s;
 
@@ -576,66 +336,49 @@
             transform:
                 translateY(-5px);
 
-            box-shadow:
-                0 15px 30px
-                rgba(
-                    0,
-                    0,
-                    0,
-                    0.10
-                );
-
         }
 
 
-        .data-label {
+        .data small {
 
             display: block;
 
-            color: #f36c21;
-
-            font-size: 12px;
+            color: #ff7b00;
 
             font-weight: bold;
 
-            letter-spacing: 1px;
+            font-size: 12px;
 
             margin-bottom: 5px;
 
         }
 
 
-        .data-value {
+        .data strong {
 
             color: #123f2a;
 
             font-size: 18px;
 
-            font-weight: bold;
-
         }
 
 
-        /* ==================================================
+        /* ==============================
            TENTANG
-        ================================================== */
+        ============================== */
 
         .tentang {
-
-            width: 100%;
-
-            max-width: none;
 
             background: #123f2a;
 
             color: white;
 
+            padding: 80px 8%;
+
         }
 
 
         .tentang-container {
-
-            width: 90%;
 
             max-width: 1100px;
 
@@ -644,29 +387,26 @@
         }
 
 
-        .tentang .section-title h2 {
+        .tentang .judul h2 {
 
             color: white;
 
         }
 
 
-        .tentang .section-title p {
+        .tentang .judul p {
 
             color: #cbd5e1;
 
         }
 
 
-        .kartu-grid {
+        .kartu-container {
 
             display: grid;
 
             grid-template-columns:
-                repeat(
-                    2,
-                    1fr
-                );
+                1fr 1fr;
 
             gap: 25px;
 
@@ -683,35 +423,7 @@
 
             border-radius: 20px;
 
-            position: relative;
-
-            overflow: hidden;
-
             transition: 0.3s;
-
-        }
-
-
-        .kartu::before {
-
-            content: "";
-
-            position: absolute;
-
-            top: 0;
-
-            left: 0;
-
-            width: 100%;
-
-            height: 5px;
-
-            background:
-                linear-gradient(
-                    90deg,
-                    #f36c21,
-                    #ffd166
-                );
 
         }
 
@@ -719,16 +431,11 @@
         .kartu:hover {
 
             transform:
-                translateY(-8px);
+                translateY(-7px);
 
             box-shadow:
                 0 20px 40px
-                rgba(
-                    0,
-                    0,
-                    0,
-                    0.20
-                );
+                rgba(0, 0, 0, 0.2);
 
         }
 
@@ -746,9 +453,9 @@
 
             color: #123f2a;
 
-            font-size: 23px;
-
             margin-bottom: 10px;
+
+            font-size: 23px;
 
         }
 
@@ -762,54 +469,9 @@
         }
 
 
-        /* ==================================================
-           BIODATA SINGKAT
-        ================================================== */
-
-        .biodata {
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #fff8f2,
-                    white
-                );
-
-            padding:
-                70px 20px;
-
-            text-align: center;
-
-        }
-
-
-        .biodata h2 {
-
-            color: #123f2a;
-
-            font-size: 32px;
-
-            max-width: 750px;
-
-            margin: auto;
-
-        }
-
-
-        .biodata p {
-
-            color: #f36c21;
-
-            font-weight: bold;
-
-            margin-top: 15px;
-
-        }
-
-
-        /* ==================================================
+        /* ==============================
            FOOTER
-        ================================================== */
+        ============================== */
 
         footer {
 
@@ -817,32 +479,9 @@
 
             color: white;
 
-            padding: 35px 5%;
+            text-align: center;
 
-        }
-
-
-        .footer-container {
-
-            width: 90%;
-
-            max-width: 1100px;
-
-            margin: auto;
-
-            display: flex;
-
-            justify-content:
-                space-between;
-
-            gap: 20px;
-
-        }
-
-
-        footer strong {
-
-            font-size: 16px;
+            padding: 35px;
 
         }
 
@@ -851,80 +490,57 @@
 
             color: #b9c7bf;
 
-            font-size: 13px;
-
-            margin-top: 5px;
+            margin-top: 7px;
 
         }
 
 
-        /* ==================================================
-           RESPONSIVE HP
-        ================================================== */
+        /* ==============================
+           RESPONSIVE
+        ============================== */
 
         @media (max-width: 800px) {
 
-            .nav-container {
+            nav {
 
                 flex-direction: column;
 
-                padding: 15px 0;
-
-                gap: 10px;
+                gap: 15px;
 
             }
 
 
-            .menu {
+            nav a {
 
-                flex-wrap: wrap;
-
-                justify-content: center;
+                margin: 5px;
 
             }
 
 
             .hero {
 
-                min-height: auto;
+                padding: 60px 5%;
 
             }
 
 
             .hero-container {
 
-                min-height: auto;
-
                 grid-template-columns: 1fr;
-
-                padding:
-                    70px 0;
-
-            }
-
-
-            .hero-text {
 
                 text-align: center;
 
             }
 
 
-            .hero-text p {
+            .hero-text h1 {
 
-                margin: auto;
-
-            }
-
-
-            .foto-area {
-
-                order: -1;
+                font-size: 42px;
 
             }
 
 
-            .foto-box {
+            .foto {
 
                 width: 300px;
 
@@ -933,41 +549,25 @@
             }
 
 
-            .identitas-grid {
+            .data-container {
 
                 grid-template-columns: 1fr;
 
             }
 
 
-            .kartu-grid {
+            .kartu-container {
 
                 grid-template-columns: 1fr;
-
-            }
-
-
-            .footer-container {
-
-                flex-direction: column;
-
-                text-align: center;
 
             }
 
         }
 
 
-        @media (max-width: 500px) {
+        @media (max-width: 450px) {
 
-            .hero-text h1 {
-
-                font-size: 40px;
-
-            }
-
-
-            .foto-box {
+            .foto {
 
                 width: 270px;
 
@@ -976,31 +576,9 @@
             }
 
 
-            .tombol {
+            .hero-text h1 {
 
-                flex-direction: column;
-
-            }
-
-
-            .btn {
-
-                text-align: center;
-
-            }
-
-
-            .section {
-
-                padding:
-                    60px 0;
-
-            }
-
-
-            .section-title h2 {
-
-                font-size: 30px;
+                font-size: 36px;
 
             }
 
@@ -1014,39 +592,30 @@
 <body>
 
 
-    <!-- ==================================================
+    <!-- ==============================
          NAVBAR
-    ================================================== -->
+    ============================== -->
 
-    <nav class="navbar">
+    <nav>
 
-        <div class="nav-container">
+        <h2>
+            WISNU<span>.</span>
+        </h2>
 
 
-            <a
-                href="#beranda"
-                class="logo"
-            >
-                WISNU<span>.</span>
+        <div>
+
+            <a href="#beranda">
+                Beranda
             </a>
 
+            <a href="#identitas">
+                Identitas
+            </a>
 
-            <div class="menu">
-
-                <a href="#beranda">
-                    Beranda
-                </a>
-
-                <a href="#identitas">
-                    Identitas
-                </a>
-
-                <a href="#tentang">
-                    Tentang Saya
-                </a>
-
-            </div>
-
+            <a href="#tentang">
+                Tentang
+            </a>
 
         </div>
 
@@ -1054,11 +623,11 @@
 
 
 
-    <!-- ==================================================
-         BERANDA / HERO
-    ================================================== -->
+    <!-- ==============================
+         BERANDA
+    ============================== -->
 
-    <header
+    <section
         class="hero"
         id="beranda"
     >
@@ -1075,220 +644,47 @@
 
                 <h1>
 
-                    Halo, Saya
-
-                    <span>
-                        Wisnu
-                    </span>
+                    Wisnu
+                    <span>Sanjaya</span>
 
                 </h1>
 
 
                 <p>
 
-                    Nama saya Wisnu Sanjaya
+                    Halo, saya Wisnu Sanjaya
                     Putra Perdana. Saya merupakan
-                    mahasiswa Program Studi
-                    D4 Elektromedis semester 5.
-                    Saya memiliki hobi berenang
-                    dan mengikuti organisasi HIMATEM.
+                    mahasiswa D4 Elektromedis
+                    semester 5. Saya memiliki
+                    hobi berenang dan mengikuti
+                    organisasi HIMATEM.
 
                 </p>
 
 
-                <div class="tombol">
-
-                    <a
-                        href="#identitas"
-                        class="btn btn-primary"
-                    >
-                        Lihat Identitas
-                    </a>
-
-
-                    <a
-                        href="#tentang"
-                        class="btn btn-outline"
-                    >
-                        Tentang Saya
-                    </a>
-
-                </div>
+                <a
+                    href="#identitas"
+                    class="tombol"
+                >
+                    Lihat Identitas
+                </a>
 
             </div>
 
 
 
-            <!-- ==================================================
-                 FOTO YANG DIUPLOAD
-            ================================================== -->
-
-            <div class="foto-area">
-
-                <div class="foto-box">
-
-                    <img
-                        src="wisnu.jpg"
-                        alt="Foto Wisnu Sanjaya Putra Perdana"
-                    >
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </header>
-
-
-
-    <!-- ==================================================
-         IDENTITAS
-    ================================================== -->
-
-    <section
-        class="section"
-        id="identitas"
-    >
-
-        <div class="section-title">
-
-            <small>
-                DATA DIRI
-            </small>
-
-
-            <h2>
-                Identitas Saya
-            </h2>
-
-
-            <p>
-                Informasi pribadi mahasiswa
-            </p>
-
-        </div>
-
-
-
-        <div class="identitas-grid">
-
-
-            <!-- NAMA -->
-
-            <div class="data">
-
-                <span class="data-label">
-                    NAMA LENGKAP
-                </span>
-
-
-                <span class="data-value">
-                    Wisnu Sanjaya Putra Perdana
-                </span>
-
-            </div>
-
-
-
-            <!-- NIM -->
-
-            <div class="data">
-
-                <span class="data-label">
-                    NIM
-                </span>
-
-
-                <span class="data-value">
-                    1202405050
-                </span>
-
-            </div>
-
-
-
-            <!-- PRODI -->
-
-            <div class="data">
-
-                <span class="data-label">
-                    PROGRAM STUDI
-                </span>
-
-
-                <span class="data-value">
-                    D4 Elektromedis
-                </span>
-
-            </div>
-
-
-
-            <!-- SEMESTER -->
-
-            <div class="data">
-
-                <span class="data-label">
-                    SEMESTER
-                </span>
-
-
-                <span class="data-value">
-                    5
-                </span>
-
-            </div>
-
-
-
-            <!-- JENIS KELAMIN -->
-
-            <div class="data">
-
-                <span class="data-label">
-                    JENIS KELAMIN
-                </span>
-
-
-                <span class="data-value">
-                    Laki - Laki
-                </span>
-
-            </div>
-
-
-
-            <!-- HOBI -->
-
-            <div class="data">
-
-                <span class="data-label">
-                    HOBI
-                </span>
-
-
-                <span class="data-value">
-                    Berenang
-                </span>
-
-            </div>
-
-
-
-            <!-- ORGANISASI -->
-
-            <div class="data">
-
-                <span class="data-label">
-                    ORGANISASI
-                </span>
-
-
-                <span class="data-value">
-                    HIMATEM
-                </span>
+            <!-- =================================
+                 FOTO
+                 FILE HARUS BERNAMA:
+                 foto-wisnu.jpg
+            ================================== -->
+
+            <div class="foto">
+
+                <img
+                    src="./foto-wisnu.jpg"
+                    alt="Foto Wisnu Sanjaya Putra Perdana"
+                >
 
             </div>
 
@@ -1299,45 +695,159 @@
 
 
 
-    <!-- ==================================================
-         TENTANG SAYA
-    ================================================== -->
+    <!-- ==============================
+         IDENTITAS
+    ============================== -->
 
     <section
-        class="section tentang"
+        class="section"
+        id="identitas"
+    >
+
+        <div class="judul">
+
+            <h2>
+                Identitas Saya
+            </h2>
+
+            <p>
+                Data diri mahasiswa
+            </p>
+
+        </div>
+
+
+        <div class="data-container">
+
+
+            <div class="data">
+
+                <small>
+                    NAMA LENGKAP
+                </small>
+
+                <strong>
+                    Wisnu Sanjaya Putra Perdana
+                </strong>
+
+            </div>
+
+
+            <div class="data">
+
+                <small>
+                    NIM
+                </small>
+
+                <strong>
+                    1202405050
+                </strong>
+
+            </div>
+
+
+            <div class="data">
+
+                <small>
+                    PROGRAM STUDI
+                </small>
+
+                <strong>
+                    D4 Elektromedis
+                </strong>
+
+            </div>
+
+
+            <div class="data">
+
+                <small>
+                    SEMESTER
+                </small>
+
+                <strong>
+                    5
+                </strong>
+
+            </div>
+
+
+            <div class="data">
+
+                <small>
+                    JENIS KELAMIN
+                </small>
+
+                <strong>
+                    Laki - Laki
+                </strong>
+
+            </div>
+
+
+            <div class="data">
+
+                <small>
+                    HOBI
+                </small>
+
+                <strong>
+                    Berenang
+                </strong>
+
+            </div>
+
+
+            <div class="data">
+
+                <small>
+                    ORGANISASI
+                </small>
+
+                <strong>
+                    HIMATEM
+                </strong>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==============================
+         TENTANG SAYA
+    ============================== -->
+
+    <section
+        class="tentang"
         id="tentang"
     >
 
         <div class="tentang-container">
 
 
-            <div class="section-title">
-
-                <small>
-                    AKTIVITAS
-                </small>
-
+            <div class="judul">
 
                 <h2>
                     Hobi & Organisasi
                 </h2>
 
-
                 <p>
-                    Aktivitas yang saya ikuti
-                    di luar kegiatan perkuliahan.
+                    Aktivitas dan kegiatan saya
                 </p>
 
             </div>
 
 
-
-            <div class="kartu-grid">
+            <div class="kartu-container">
 
 
                 <!-- HOBI -->
 
-                <article class="kartu">
+                <div class="kartu">
 
                     <div class="icon">
                         🏊
@@ -1352,20 +862,20 @@
                     <p>
 
                         Berenang merupakan salah satu
-                        hobi saya. Selain menyenangkan,
-                        berenang juga menjadi aktivitas
-                        yang dapat membantu menjaga
-                        kebugaran tubuh.
+                        hobi saya. Kegiatan ini dapat
+                        membantu menjaga kebugaran
+                        sekaligus menjadi aktivitas
+                        untuk mengisi waktu luang.
 
                     </p>
 
-                </article>
+                </div>
 
 
 
                 <!-- ORGANISASI -->
 
-                <article class="kartu">
+                <div class="kartu">
 
                     <div class="icon">
                         🤝
@@ -1380,15 +890,15 @@
                     <p>
 
                         Saya mengikuti organisasi HIMATEM
-                        sebagai wadah untuk mendapatkan
-                        pengalaman, meningkatkan kemampuan
-                        komunikasi, bekerja sama dalam tim,
-                        serta mengembangkan kemampuan
+                        untuk menambah pengalaman,
+                        meningkatkan kemampuan komunikasi,
+                        bekerja sama dalam tim, dan
+                        mengembangkan kemampuan
                         berorganisasi.
 
                     </p>
 
-                </article>
+                </div>
 
 
             </div>
@@ -1399,80 +909,29 @@
 
 
 
-    <!-- ==================================================
-         QUOTE
-    ================================================== -->
-
-    <section class="biodata">
-
-        <h2>
-
-            "Terus belajar, terus berkembang,
-            dan jangan takut mencoba
-            hal baru."
-
-        </h2>
-
-
-        <p>
-            — Wisnu Sanjaya Putra Perdana
-        </p>
-
-    </section>
-
-
-
-    <!-- ==================================================
+    <!-- ==============================
          FOOTER
-    ================================================== -->
+    ============================== -->
 
     <footer>
 
-        <div class="footer-container">
+        <strong>
+            Wisnu Sanjaya Putra Perdana
+        </strong>
 
 
-            <div>
-
-                <strong>
-                    Wisnu Sanjaya Putra Perdana
-                </strong>
+        <p>
+            D4 Elektromedis | Semester 5
+        </p>
 
 
-                <p>
-                    D4 Elektromedis —
-                    Semester 5
-                </p>
-
-            </div>
-
-
-
-            <div>
-
-                <p>
-                    Organisasi:
-                    HIMATEM
-                </p>
-
-
-                <p>
-                    © 2026 Wisnu Sanjaya
-                    Putra Perdana
-                </p>
-
-            </div>
-
-
-        </div>
+        <p>
+            © 2026 Wisnu Sanjaya Putra Perdana
+        </p>
 
     </footer>
 
 
 </body>
 
-</html><div class="foto-box">
-    <img
-        src="wisnu.jpg"
-        alt="Foto Wisnu Sanjaya Putra Perdana"
-    >
-</div>
+</html>
