@@ -1,20 +1,452 @@
-<div class="photo-card">
-    <img src="foto-wisnu.png" alt="Foto Wisnu">
-</div><main class="hero">
+<!DOCTYPE html>
+<html lang="id">
 
-    <div class="photo-card">
-        <img src="foto-wisnu.png" alt="Foto Wisnu Sanjaya Putra Perdana">
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <section class="content">
+    <title>Modul 3 - Biodata Diri</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(5, 30, 40, 0.82),
+                    rgba(5, 30, 40, 0.90)
+                ),
+                url("foto-wisnu.png");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            min-height: 100vh;
+        }
+
+
+        /* HEADER */
+
+        header {
+            text-align: center;
+            padding: 35px 20px;
+
+            background: rgba(0, 0, 0, 0.35);
+
+            border-bottom: 1px solid
+            rgba(255, 255, 255, 0.2);
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #55d6be;
+            font-size: 17px;
+        }
+
+
+        /* CONTAINER */
+
+        .container {
+            width: 90%;
+            max-width: 1050px;
+
+            margin: 50px auto;
+
+            display: flex;
+            align-items: center;
+
+            gap: 50px;
+        }
+
+
+        /* FOTO */
+
+        .foto {
+            width: 360px;
+            height: 500px;
+
+            padding: 8px;
+
+            border-radius: 25px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #55d6be,
+                    #f4a261
+                );
+
+            box-shadow:
+                0 20px 50px
+                rgba(0, 0, 0, 0.5);
+
+            flex-shrink: 0;
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            border-radius: 18px;
+
+            display: block;
+        }
+
+
+        /* BIODATA */
+
+        .biodata {
+            flex: 1;
+        }
+
+        .biodata h2 {
+            font-size: 42px;
+
+            line-height: 1.1;
+
+            margin-bottom: 15px;
+        }
+
+        .biodata h2 span {
+            color: #55d6be;
+        }
+
+        .deskripsi {
+            color: #dce8eb;
+
+            line-height: 1.7;
+
+            font-size: 17px;
+
+            margin-bottom: 25px;
+        }
+
+
+        /* DATA */
+
+        .data {
+            display: grid;
+
+            grid-template-columns:
+            repeat(2, 1fr);
+
+            gap: 15px;
+        }
+
+        .data-box {
+            padding: 18px;
+
+            border-radius: 15px;
+
+            background:
+                rgba(255, 255, 255, 0.10);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.18);
+
+            backdrop-filter: blur(10px);
+
+            transition: 0.3s;
+        }
+
+        .data-box:hover {
+            transform: translateY(-5px);
+
+            background:
+                rgba(255, 255, 255, 0.17);
+        }
+
+        .data-box p {
+            color: #9dbbc2;
+
+            font-size: 13px;
+
+            margin-bottom: 7px;
+        }
+
+        .data-box strong {
+            font-size: 16px;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+
+            padding: 25px;
+
+            margin-top: 50px;
+
+            background:
+                rgba(0, 0, 0, 0.4);
+
+            color: #cbdadd;
+
+            line-height: 1.7;
+        }
+
+
+        /* RESPONSIVE */
+
+        @media (max-width: 800px) {
+
+            .container {
+                flex-direction: column;
+
+                text-align: center;
+            }
+
+            .foto {
+                width: 320px;
+                height: 450px;
+            }
+
+            .data {
+                text-align: left;
+            }
+
+            .biodata h2 {
+                font-size: 35px;
+            }
+        }
+
+
+        @media (max-width: 500px) {
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            .foto {
+                width: 280px;
+                height: 390px;
+            }
+
+            .data {
+                grid-template-columns: 1fr;
+            }
+
+            .biodata h2 {
+                font-size: 30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
         <h1>
-            Wisnu Sanjaya<br>
-            <span>Putra Perdana</span>
+            BIODATA DIRI
         </h1>
 
         <p>
-            Mahasiswa D4 Elektromedis Semester 5
+            Pemrograman Web - Modul 1
         </p>
-    </section>
 
-</main>
+    </header>
+
+
+
+    <!-- CONTENT -->
+
+    <div class="container">
+
+
+        <!-- FOTO -->
+
+        <div class="foto">
+
+            <img
+                src="foto-wisnu.png"
+                alt="Foto Wisnu Sanjaya Putra Perdana"
+            >
+
+        </div>
+
+
+
+        <!-- BIODATA -->
+
+        <div class="biodata">
+
+            <h2>
+
+                Wisnu Sanjaya
+                <br>
+
+                <span>Putra Perdana</span>
+
+            </h2>
+
+
+            <p class="deskripsi">
+
+                Halo, saya Wisnu Sanjaya Putra Perdana.
+                Saya merupakan mahasiswa Program Studi
+                D4 Elektromedis di Universitas Muhammadiyah
+                PKU Surakarta. Saat ini saya sedang menempuh
+                semester 5 dan aktif dalam organisasi HIMATEM.
+
+            </p>
+
+
+
+            <div class="data">
+
+
+                <div class="data-box">
+
+                    <p>
+                        NAMA
+                    </p>
+
+                    <strong>
+                        Wisnu Sanjaya Putra Perdana
+                    </strong>
+
+                </div>
+
+
+                <div class="data-box">
+
+                    <p>
+                        NIM
+                    </p>
+
+                    <strong>
+                        1202405050
+                    </strong>
+
+                </div>
+
+
+                <div class="data-box">
+
+                    <p>
+                        PROGRAM STUDI
+                    </p>
+
+                    <strong>
+                        D4 Elektromedis
+                    </strong>
+
+                </div>
+
+
+                <div class="data-box">
+
+                    <p>
+                        SEMESTER
+                    </p>
+
+                    <strong>
+                        5
+                    </strong>
+
+                </div>
+
+
+                <div class="data-box">
+
+                    <p>
+                        HOBI
+                    </p>
+
+                    <strong>
+                        🏊 Berenang
+                    </strong>
+
+                </div>
+
+
+                <div class="data-box">
+
+                    <p>
+                        JENIS KELAMIN
+                    </p>
+
+                    <strong>
+                        Laki - Laki
+                    </strong>
+
+                </div>
+
+
+                <div class="data-box">
+
+                    <p>
+                        ORGANISASI
+                    </p>
+
+                    <strong>
+                        HIMATEM
+                    </strong>
+
+                </div>
+
+
+                <div class="data-box">
+
+                    <p>
+                        UNIVERSITAS
+                    </p>
+
+                    <strong>
+                        Universitas Muhammadiyah PKU Surakarta
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Wisnu Sanjaya Putra Perdana
+        </p>
+
+        <p>
+            D4 Elektromedis | Semester 5 | HIMATEM
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
